@@ -34,5 +34,7 @@ Vue.component(
  */
 
 const app = new Vue({
-    el: "#app"
+    el: "#app",
+    router,
+    render: h => h(App)
 });
