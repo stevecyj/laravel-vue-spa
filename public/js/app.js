@@ -2000,11 +2000,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  mounted: function mounted() {
-    console.log("Component mounted.");
-  }
-});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
 
@@ -2045,8 +2052,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./router */ "./resources/js/router.js");
-/* harmony import */ var _layouts_App_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./layouts/App.vue */ "./resources/js/layouts/App.vue");
+/* harmony import */ var _js_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/js/router */ "./resources/js/router/index.js");
+/* harmony import */ var _js_layouts_App_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/js/layouts/App.vue */ "./resources/js/layouts/App.vue");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -2076,9 +2083,9 @@ Vue.component("example-component", __webpack_require__(/*! ./components/ExampleC
 
 var app = new Vue({
   el: "#app",
-  router: _router__WEBPACK_IMPORTED_MODULE_0__.default,
+  router: _js_router__WEBPACK_IMPORTED_MODULE_0__.default,
   render: function render(h) {
-    return h(_layouts_App_vue__WEBPACK_IMPORTED_MODULE_1__.default);
+    return h(_js_layouts_App_vue__WEBPACK_IMPORTED_MODULE_1__.default);
   }
 });
 
@@ -2128,10 +2135,10 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/js/router.js":
-/*!********************************!*\
-  !*** ./resources/js/router.js ***!
-  \********************************/
+/***/ "./resources/js/router/index.js":
+/*!**************************************!*\
+  !*** ./resources/js/router/index.js ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2141,9 +2148,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pages/Home */ "./resources/js/pages/Home/index.vue");
-/* harmony import */ var _pages_About__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/About */ "./resources/js/pages/About/index.vue");
-/* harmony import */ var _pages_Example__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/Example */ "./resources/js/pages/Example/index.vue");
+/* harmony import */ var _js_pages_Home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/js/pages/Home */ "./resources/js/pages/Home/index.vue");
+/* harmony import */ var _js_pages_About__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/js/pages/About */ "./resources/js/pages/About/index.vue");
+/* harmony import */ var _js_pages_Example__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/js/pages/Example */ "./resources/js/pages/Example/index.vue");
 
 
 
@@ -2156,15 +2163,15 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_4__.default({
   routes: [{
     path: "/",
     name: "home",
-    component: _pages_Home__WEBPACK_IMPORTED_MODULE_0__.default
+    component: _js_pages_Home__WEBPACK_IMPORTED_MODULE_0__.default
   }, {
     path: "/about",
     name: "about",
-    component: _pages_About__WEBPACK_IMPORTED_MODULE_1__.default
+    component: _js_pages_About__WEBPACK_IMPORTED_MODULE_1__.default
   }, {
     path: "/example",
     name: "example",
-    component: _pages_Example__WEBPACK_IMPORTED_MODULE_2__.default
+    component: _js_pages_Example__WEBPACK_IMPORTED_MODULE_2__.default
   }]
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (router);
@@ -38155,32 +38162,48 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container mt-5" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
-              )
-            ])
+  return _c(
+    "div",
+    [
+      _c("h1", [_vm._v("Test Vue")]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "alert alert-primary", attrs: { role: "alert" } },
+        [_vm._v("\n        A simple primary alert—check it out!\n    ")]
+      ),
+      _vm._v(" "),
+      _c(
+        "b-card",
+        {
+          staticClass: "mb-2",
+          staticStyle: { "max-width": "20rem" },
+          attrs: {
+            title: "Card Title",
+            "img-src": "https://picsum.photos/600/300/?image=25",
+            "img-alt": "Image",
+            "img-top": "",
+            tag: "article"
+          }
+        },
+        [
+          _c("b-card-text", [
+            _vm._v(
+              "\n            Some quick example text to build on the card title and make up\n            the bulk of the card's content.\n        "
+            )
+          ]),
+          _vm._v(" "),
+          _c("b-button", { attrs: { href: "#", variant: "primary" } }, [
+            _vm._v("Go somewhere")
           ])
-        ])
-      ])
-    ])
-  }
-]
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
