@@ -11,6 +11,24 @@ trim_trailing_whitespace = true
 [*.md]
 trim_trailing_whitespace = false
 
+[{*.php,*.py,*.md}]
+indent_size = 4
+
+[*.json]
+# The JSON files contain newlines inconsistently
+insert_final_newline = ignore
+
+[**.min.js]
+indent_style = ignore
+insert_final_newline = ignore
+
+[docs/**.txt]
+max_line_length = 79
+
+[**/vendor/**]
+indent_style = ignore
+indent_size = ignore
+
 [*.{yml,yaml}]
 indent_size = 2
 
