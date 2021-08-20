@@ -32,6 +32,16 @@
                             About
                         </router-link>
                     </li>
+
+                    <li class="nav-item">
+                        <router-link
+                            class="nav-link"
+                            data-toggle="collapse"
+                            :to="{ name: 'example' }"
+                        >
+                            Example
+                        </router-link>
+                    </li>
                 </ul>
             </div>
         </nav>
