@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-import Home from "@/js/pages/Home";
+import { Home } from "@/js/pages/Home";
 import About from "@/js/pages/About";
 import Example from "@/js/pages/Example";
 

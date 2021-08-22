@@ -20,6 +20,13 @@ mix.webpackConfig({
     }
 });
 
+mix.options({
+    hmrOptions: {
+        host: "192.168.0.100",
+        port: 8080
+    }
+});
+
 mix.js("resources/js/app.js", "public/js")
     .vue()
     .sass("resources/sass/app.scss", "public/css");

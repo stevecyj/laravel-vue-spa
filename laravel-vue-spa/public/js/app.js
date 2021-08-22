@@ -2152,6 +2152,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/pages/index.js":
+/*!*************************************!*\
+  !*** ./resources/js/pages/index.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Home": () => (/* reexport safe */ _Home__WEBPACK_IMPORTED_MODULE_0__.Home)
+/* harmony export */ });
+/* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Home */ "./resources/js/pages/Home/index.js");
+
+
+/***/ }),
+
 /***/ "./resources/js/router/index.js":
 /*!**************************************!*\
   !*** ./resources/js/router/index.js ***!
@@ -2165,7 +2181,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var _js_pages_Home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/js/pages/Home */ "./resources/js/pages/Home/index.js");
+/* harmony import */ var _js_pages__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/js/pages */ "./resources/js/pages/index.js");
 /* harmony import */ var _js_pages_About__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/js/pages/About */ "./resources/js/pages/About/index.vue");
 /* harmony import */ var _js_pages_Example__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/js/pages/Example */ "./resources/js/pages/Example/index.vue");
 
@@ -2180,7 +2196,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_4__.default({
   routes: [{
     path: "/",
     name: "home",
-    component: _js_pages_Home__WEBPACK_IMPORTED_MODULE_0__.Home
+    component: _js_pages__WEBPACK_IMPORTED_MODULE_0__.Home
   }, {
     path: "/about",
     name: "about",
@@ -38256,7 +38272,7 @@ var staticRenderFns = [
           _c("div", { staticClass: "card" }, [
             _c("div", { staticClass: "card-header" }, [_vm._v("Home")]),
             _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [_vm._v("Home Page")])
+            _c("div", { staticClass: "card-body" }, [_vm._v("Home Pageeeeee")])
           ])
         ])
       ])
