@@ -1,9 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-import { Home } from "@/js/pages/Home";
-import About from "@/js/pages/About";
-import Example from "@/js/pages/Example";
+import components from "./components";
 
 Vue.use(VueRouter);
 
@@ -14,17 +12,17 @@ const router = new VueRouter({
         {
             path: "/",
             name: "home",
-            component: Home
+            component: components.Home
         },
         {
             path: "/about",
             name: "about",
-            component: About
+            component: components.About
         },
         {
             path: "/example",
             name: "example",
-            component: Example
+            component: components.Example
         }
     ]
 });

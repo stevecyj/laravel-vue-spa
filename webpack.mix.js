@@ -22,8 +22,9 @@ mix.webpackConfig({
 
 mix.options({
     hmrOptions: {
-        host: "192.168.0.100",
-        port: 8080
+        // host: "192.168.0.100",
+        host: "172.17.204.105",
+        port: 8888
     }
 });
 
